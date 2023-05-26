@@ -1,18 +1,13 @@
 package ogaitw.introducaoaoSpring.entities;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
 public class Anime {
+    private Long id;
     private String nome;
 
-    public Anime(String nome) {
-        this.nome = nome;
     }
 
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-}
